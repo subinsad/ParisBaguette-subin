@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            href="https://cdn.paris.spl.li/wp-content/uploads/2019/09/cropped-PB_favicon-32x32.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+        />
+
+        <!-- SWIPER 외부 라이브러리 연결-->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+        />
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="./css/slide.css" />
+        <link rel="stylesheet" href="./css/scss/main.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@200;300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <script defer src="./js/main.js"></script>
+
+        <style>
+            .swiper-slide swiper-slide-prev {
+                margin-right: 0;
+            }
+        </style>
+
+        <title>파리바게뜨</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-contents">
+                    <li class="nav-contents__text">파바의 약속</li>
+                    <li class="nav-contents__text">파바 매거진</li>
+                    <li class="nav-contents__text">파바 스토리</li>
+                    <li class="nav-contents__text">상품 안내</li>
+                </ul>
+            </nav>
+            <h1 class="logo">
+                <a href="javascript:void(0)">
+                    <img src="./img/logo.svg" alt="" />
+                </a>
+            </h1>
+
+            <nav>
+                <ul class="nav-contents">
+                    <li class="nav-contents__text">매장 정보</li>
+                    <li class="nav-contents__text">주문 정보</li>
+                    <li class="nav-contents__text">프로모션</li>
+                    <li class="nav-contents__text"></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="mainbanner">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img
+                            src="./img/KakaoTalk_20231101_144258020_01.jpg"
+                            alt=""
+                            style="margin: 0"
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="./img/파리바게뜨hp_운영-메인배너_231025.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="./img/0921_아다지오1500_메인배너_1600x2000.jpg"
+                            alt=""
+                        />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/메인배너_1600_2000.jpg" alt="" />
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section class="contents-magazine">
+            <div class="contents-magazine__title">
+                <h2 class="contents-magazine__title__text">pb magazine</h2>
+                <button class="title-btn">SHOW MORE</button>
+            </div>
+
+            <div class="contents-magazine__list-box">
+                <ul class="contents-magazine__list-box__list">
+                    <li class="img-box">
+                        <a href="" class="box">
+                            <img
+                                src="./img/0724_행복상생-블루베리_PB-MAGAZINE_썸네일.jpg"
+                                alt=""
+                                class="img-box__images"
+                            />
+                        </a>
+                        <div class="text">
+                            <b class="text__bold">충남 천안 블루베리</b>
+                            <p class="text__caption">
+                                충남 천안 블루베리 농가와 함께한 모두가 행복한
+                                행복상생 프로젝트
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="img-box">
+                        <a href="" class="box">
+                            <img
+                                src="./img/논산딸기-PB매거진_썸네일-600x750-1-600x750.png"
+                                alt=""
+                                class="img-box__images"
+                            />
+                        </a>
+                        <div class="text">
+                            <b class="text__bold">논산 딸기</b>
+                            <p>
+                                논산 딸기 농가와 함께한 모두가 행복한 행복상생
+                                프로젝트
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="img-box">
+                        <a href="" class="box">
+                            <img
+                                src="./img/문경오미자-매거진_썸네일-600x750.png"
+                                alt=""
+                                class="img-box__images"
+                            />
+                        </a>
+                        <div class="text">
+                            <b class="text__bold">문경 오미자</b>
+                            <p>
+                                문경 오미자 농가와 함께한 모두가 행복한 행복상생
+                                프로젝트
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contents-stroy">
+            <div class="contents-stroy__title">
+                <h2 class="contents-stroy__title">pb story</h2>
+                <button class="title-btn">SHOW MORE</button>
+            </div>
+
+            <div class="contents-stroy__list-box">
+                <ul class="contents-stroy__list-box__list">
+                    <li class="img-box">
+                        <img
+                            src="./img/윈터베리-타르트에-불이-켜지면💙마법-같은-파리바게뜨-크리스마스-파티로-초대합니다_600x6 2.jpg"
+                            alt=""
+                            class="img-box__images"
+                        />
+                        <div class="img-box__text-box">
+                            <a href="" class="img-box__text-box__ad">광고</a>
+                            <a href="" class="img-box__text-box__title">
+                                🎅 Magical Holiday | 함께 이 겨울을 밝히다💙
+                                마법 같은 파리바게뜨 크리스마스 파티
+                            </a>
+
+                            <a href="" class="img-box__text-box__sub-text">
+                                Magical Holiday 💙 이번 크리스마스, 케이크의
+                                달콤한 마법이 파리바게뜨에서 펼쳐집니다! 윤서가
+                                정성스레 만든 초대장을 받은 당신💌 케이크에 불을
+                                붙여 함께 이
+                            </a>
+
+                            <span class="img-box__text-box__day"
+                                >2023-11-17</span
+                            >
+                        </div>
+                    </li>
+
+                    <li class="img-box">
+                        <img
+                            src="./img/윤서는-어떤-소원을-빌었을까💙마법-같은-파리바게뜨-크리스마스-파티로-초대합니ᄃ.jpg"
+                            alt=""
+                            class="img-box__images"
+                        />
+                        <div class="img-box__text-box">
+                            <a href="" class="img-box__text-box__ad">광고</a>
+                            <a href="" class="img-box__text-box__title">
+                                🎅 Magical Holiday | 윤서는 어떤 소원을
+                                빌었을까💙마법 같은 파리바게뜨
+                            </a>
+
+                            <a href="" class="img-box__text-box__sub-text">
+                                Magical Holiday 💙 이번 크리스마스, 케이크의
+                                달콤한 마법이 파리바게뜨에서 펼쳐집니다! 윤서가
+                                정성스레 만든 초대장을 받은 당신💌 케이크에 불을
+                                붙여 함께 이
+                            </a>
+
+                            <span class="img-box__text-box__day"
+                                >2023-11-17</span
+                            >
+                        </div>
+                    </li>
+
+                    <li class="img-box">
+                        <img
+                            src="./img/윈터베리-타르트에-불이-켜지면💙마법-같은-파리바게뜨-크리스마스-파티로-초대합니다_600x6 2.jpg"
+                            alt=""
+                            class="img-box__images"
+                        />
+                        <div class="img-box__text-box">
+                            <a href="" class="img-box__text-box__ad">광고</a>
+                            <a href="" class="img-box__text-box__title">
+                                🎅 Magical Holiday | 함께 이 겨울을 밝히다💙
+                                마법 같은 파리바게뜨 크리스마스 파티
+                            </a>
+
+                            <a href="" class="img-box__text-box__sub-text">
+                                Magical Holiday 💙 이번 크리스마스, 케이크의
+                                달콤한 마법이 파리바게뜨에서 펼쳐집니다! 윤서가
+                                정성스레 만든 초대장을 받은 당신💌 케이크에 불을
+                                붙여 함께 이
+                            </a>
+
+                            <span class="img-box__text-box__day"
+                                >2023-11-17</span
+                            >
+                        </div>
+                    </li>
+
+                    <li class="img-box">
+                        <img
+                            src="./img/윤서는-어떤-소원을-빌었을까💙마법-같은-파리바게뜨-크리스마스-파티로-초대합니ᄃ.jpg"
+                            alt=""
+                            class="img-box__images"
+                        />
+                        <div class="img-box__text-box">
+                            <a href="" class="img-box__text-box__ad">광고</a>
+                            <a href="" class="img-box__text-box__title">
+                                🎅 Magical Holiday | 윤서는 어떤 소원을
+                                빌었을까💙마법 같은 파리바게뜨
+                            </a>
+
+                            <a href="" class="img-box__text-box__sub-text">
+                                Magical Holiday 💙 이번 크리스마스, 케이크의
+                                달콤한 마법이 파리바게뜨에서 펼쳐집니다! 윤서가
+                                정성스레 만든 초대장을 받은 당신💌 케이크에 불을
+                                붙여 함께 이
+                            </a>
+
+                            <span class="img-box__text-box__day"
+                                >2023-11-17</span
+                            >
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contents-promotion">
+            <div class="contents-promotion__title">
+                <h2 class="contents-promotion__title">promotion</h2>
+                <button class="title-btn">SHOW MORE</button>
+            </div>
+
+            <div class="contents-promotion__slider">
+                <div class="swiper promotion">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/썸네일_1000_1000-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >🎅2023 Merry Christmas🎄 Magical
+                                        Holiday</a
+                                    >
+                                </b>
+
+                                <span>
+                                    <a rel="" class="swipertitle__readmore"
+                                        >READ MORE</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="swiperevent">진행 중</div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/1114_프로모션_수험표쿠폰이벤트_썸네일1000x1000-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >💝수험표 제시하면 ‘케이크’ 최대 20%
+                                        혜택✨</a
+                                    >
+                                </b>
+
+                                <span>
+                                    <a rel="" class="swipertitle__readmore"
+                                        >READ MORE</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="swiperevent">진행 중</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/1107_프로모션_현대카드구독_썸네일1000_v2-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >😎현대카드 구독서비스🎉파리바게뜨팩
+                                        100% 캐시백!</a
+                                    >
+                                </b>
+
+                                <span>
+                                    <a rel="" class="swipertitle__readmore"
+                                        >READ MORE</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="swiperevent">진행 중</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/제복입은영웅의달_썸네일1000x1000-2-1-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >제복입은 영웅의 달</a
+                                    >
+                                </b>
+
+                                <span>
+                                    <a rel="" class="swipertitle__readmore"
+                                        >READ MORE</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="swiperevent">진행 중</div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/1031_프로모션_PSG_썸네일_1000x1000-600x600.jpg"
+                                alt=""
+                            />
+
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >💙PARIS BAGUETTE X PARIS
+                                        SAINT-GERMAIN⚽ 공식 파트너십 체결</a
+                                    >
+                                </b>
+
+                                <span>
+                                    <a rel="" class="swipertitle__readmore"
+                                        >READ MORE</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="swiperevent">진행 중</div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/1017_프로모션_파리의아침_리스트썸네일-1000x1000-1-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >너만의 하루를 파바💙파리의 아침🌅</a
+                                    >
+                                </b>
+
+                                <span>
+                                    <a rel="" class="swipertitle__readmore"
+                                        >READ MORE</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="swiperevent">진행 중</div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/1020_네이버페이더블혜택_썸네일-1000x1000-1-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >네이버페이로 결제하면 매일 할인.적립
+                                        더블혜택!🎉</a
+                                    >
+                                </b>
+
+                                <span>
+                                    <a rel="" class="swipertitle__readmore"
+                                        >READ MORE</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="swiperevent">진행 중</div>
+                        </div>
+
+                        <div class="swiper-slide mainswiper">
+                            <img
+                                src="./img/1016_프로모션_치즈페어_리스트썸네일-1000-600x600.jpg"
+                                alt=""
+                                class="swiper-img"
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >🍮YOUR NAKED SELECTED CHEESE 🧀
+                                        치즈페어 프로모션✨</a
+                                    >
+                                </b>
+
+                                <span>
+                                    <a rel="" class="swipertitle__readmore"
+                                        >READ MORE</a
+                                    >
+                                </span>
+                            </div>
+                            <div class="swiperevent">진행 중</div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <span class="material-symbols-outlined"> </span>
+                    </div>
+                    <div class="swiper-button-next">
+                        <span class="material-symbols-outlined"> </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contents-products">
+            <div class="contents-products__title">
+                <h2 class="contents-products__title">products</h2>
+                <button class="title-btn">SHOW MORE</button>
+            </div>
+            <div class="contents-products__slider">
+                <div class="swiper products">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/건강한토종효모빵햄에그샌드위치_1000x1000-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >건강한토종효모빵햄&에그샌드위치</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/완제통밀에그샐러드샌드위치_1000x1000-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >완제)통밀에그샐러드샌드위치</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/건강한토종효모빵햄에그샌드위치_1000x1000-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >건강한토종효모빵햄&에그샌드위치</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/완3가지맛-굿모닝샌드위치_1000x1000-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >3가지맛 굿모닝샌드위치</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/건강한-치폴레-치킨-샐러드랩_1_1000x1000-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >건강한 치폴레 치킨 샐러드랩</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img
+                                src="./img/짱구는못말려-청포도맛_1000x1000-600x600.jpg"
+                                alt=""
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >짱구는 못말려 청포도맛(PET)</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide mainswiper">
+                            <img
+                                src="./img/건강한-치킨커틀릿-샐러드랩_1000x1000-600x600.jpg"
+                                alt=""
+                                class="swiper-img"
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >건강한 치킨커틀릿 샐러드랩</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide mainswiper">
+                            <img
+                                src="./img/클로버-행운빵소_1000x1000-600x600.jpg"
+                                alt=""
+                                class="swiper-img"
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >클로버 행운빵(소)</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide mainswiper">
+                            <img
+                                src="./img/행원의-클로버케이크_1000x1000-600x600.jpg"
+                                alt=""
+                                class="swiper-img"
+                            />
+                            <div rel="" class="swipertitle">
+                                <b>
+                                    <a rel="" class="swipertitle__title"
+                                        >행운의 클로버케이크</a
+                                    >
+                                </b>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev">
+                        <span class="material-symbols-outlined">
+                            arrow_back
+                        </span>
+                    </div>
+                    <div class="swiper-button-next">
+                        <span class="material-symbols-outlined"> </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contents-notice">
+            <div class="contents-notice__text-box">
+                <div class="hoverBox"></div>
+                <span class="innerMenu">고객센터</span>
+                <div class="inner">
+                    <strong class="link"
+                        >고객의 소리를 적극 경청하고 고객만족 향상 활동을
+                        지속적으로 실천합니다.</strong
+                    >
+                    <span class="Btn"></span>
+                </div>
+            </div>
+
+            <div class="contents-notice__text-box">
+                <div class="hoverBox"></div>
+                <span class="innerMenu">제휴 안내</span>
+                <div class="inner">
+                    <strong class="link"
+                        >다양한 온라인 제휴와 카드 정보를 확인하세요.</strong
+                    >
+                    <span class="Btn"></span>
+                </div>
+            </div>
+
+            <div class="contents-notice__text-box">
+                <div class="hoverBox"></div>
+                <span class="innerMenu">공지사항</span>
+                <div class="inner">
+                    <strong class="link"
+                        >파리바게뜨 공지내용을 확인하세요.</strong
+                    >
+                    <span class="Btn"></span>
+
+                    <span class="Btn"></span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-box">
+                <ul class="footer-box__list">
+                    <li class="title"><h3>Info</h3></li>
+                    <li class="click">
+                        <a href="javascript:void(0)">브랜드 소개</a>
+                    </li>
+                    <li class="click">
+                        <a href="javascript:void(0)">창업안내</a>
+                    </li>
+                    <li class="click">
+                        <a href="javascript:void(0)">B2B 주문 및 문의</a>
+                    </li>
+                    <li class="click">
+                        <a href="javascript:void(0)">안전보건경영방침</a>
+                    </li>
+                    <li class="click">
+                        <a href="javascript:void(0)">거래희망사전등록</a>
+                    </li>
+                    <li class="click">
+                        <a href="javascript:void(0)">윤리신고센터</a>
+                    </li>
+                    <li class="click">
+                        <a href="javascript:void(0)">채용</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-box__list">
+                    <li class="title"><h3>Contact Us</h3></li>
+                    <li class="click">고객센터</li>
+                    <li class="click">080-731-2027</li>
+                    <li class="click">
+                        평일 09:00 - 17:00 (점심 12:00 - 13:00)
+                    </li>
+                    <li class="click">고객칭찬</li>
+                </ul>
+
+                <ul class="footer-box__icon">
+                    <li class="footer-box__icon__spc">
+                        <a href="javascript:void(0)">
+                            <img src="./img/footer-logo-img-01.png" alt="" />
+                        </a>
+                    </li>
+                    <li class="footer-box__icon__sub">
+                        <a href="javascript:void(0)">
+                            <img
+                                src="./img/footer-logo-img-06.png"
+                                alt=""
+                                class="s-img"
+                            />
+                        </a>
+                    </li>
+                    <li class="footer-box__icon__sub">
+                        <a href="javascript:void(0)">
+                            <img
+                                src="./img/footer-logo-img-02.png"
+                                alt=""
+                                class="s-img"
+                            />
+                        </a>
+                    </li>
+
+                    <li class="footer-box__icon__sub">
+                        <a href="javascript:void(0)">
+                            <img
+                                src="./img/footer-logo-img-03.png"
+                                alt=""
+                                class="s-img"
+                            />
+                        </a>
+                    </li>
+
+                    <li class="footer-box__icon__sub">
+                        <a href="javascript:void(0)">
+                            <img
+                                src="./img/footer-logo-img-04.png"
+                                alt=""
+                                class="s-img"
+                            />
+                        </a>
+                    </li>
+
+                    <li class="footer-box__icon__sub">
+                        <a href="javascript:void(0)">
+                            <img
+                                src="./img/footer-logo-img-05.png"
+                                alt=""
+                                class="s-img"
+                            />
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="footer-box__follow">
+                    <h3 class="title">Follow Us</h3>
+
+                    <ul class="footer-box__follow__sns-list">
+                        <li class="icon-box">
+                            <img
+                                src="./img/sns_ico_01.svg"
+                                alt=""
+                                class="icon-box__icon"
+                            />
+                        </li>
+                        <li class="icon-box">
+                            <img
+                                src="./img/sns_ico_02.svg"
+                                alt=""
+                                class="icon-box__icon"
+                            />
+                        </li>
+                        <li class="icon-box">
+                            <img
+                                src="./img/sns_ico_03.svg"
+                                alt=""
+                                class="icon-box__icon"
+                            />
+                        </li>
+                    </ul>
+
+                    <select name="" id="" class="footer-box__follow__select">
+                        <option value="">파리크라상 (Paris Croissant)</option>
+                        <option value="">파스쿠찌 (Pascucci)</option>
+                        <option value="">파리바게뜨 중국 (PB China)</option>
+                        <option value="">파리바게뜨 미국 (PB USA)</option>
+                        <option value="">파리바게뜨 프랑스 (PB France)</option>
+                        <option value="">파리바게뜨 영국 (PB UK)</option>
+                        <option value="">파리바게뜨 캐나다 (PB Canada)</option>
+                        <option value="">
+                            파리바게뜨 싱가폴 (PB Singapore)
+                        </option>
+                        <option value="">
+                            파리바게뜨 말레이시아 (PB Malaysia)
+                        </option>
+                        <option value="">배스킨라빈스 (Baskin Robbins)</option>
+                        <option value="">던킨도너츠 (Dunkin Donuts)</option>
+                        <option value="">(주)샤니 (Shany)</option>
+                        <option value="">SPC 삼립 (SPC Samlip)</option>
+                        <option value="">해피포인트 (Happy Point)</option>
+                        <option value="">SPC외식브랜드 (SPC Dining)</option>
+                        <option value="">
+                            디퀸즈케이터링 (D.queens Catering)
+                        </option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="footer-menu">
+                <ul class="footer-menu__click">
+                    <li class="line">이용약관</li>
+                    <li class="line" style="color: red">개인정보처리방침</li>
+                    <li class="line">이메일무단수집거부</li>
+                    <li>영상정보처리기기운영관리방침</li>
+                </ul>
+
+                <div class="footer-menu__copyright">
+                    <p>
+                        All Rights Reserved © PARIS BAGUETTE, PARIS CROISSANT
+                        CO., LTD. 경기도 성남시 중원구 사기막골로 31번길 18
+                        (주)파리크리상
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
