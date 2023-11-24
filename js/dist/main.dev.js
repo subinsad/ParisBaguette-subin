@@ -1,6 +1,6 @@
 "use strict";
 
-var _ref, _ref2, _ref3;
+var _ref, _ref2, _ref3, _ref4;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -46,4 +46,18 @@ new Swiper('.swiper.products', (_ref3 = {
 }), _defineProperty(_ref3, "navigation", {
   prevEl: '.swiper-button-prev',
   nextEl: '.swiper-button-next'
-}), _ref3));
+}), _ref3)); //sns 슬라이더
+
+new Swiper('.swiper.sns', (_ref4 = {
+  autoplay: {
+    delay: 5000
+  },
+  slidesPerView: "auto",
+  loop: true
+}, _defineProperty(_ref4, "slidesPerView", 6), _defineProperty(_ref4, "spaceBetween", 0), _defineProperty(_ref4, "pagination", {
+  el: '.swiper-pagination',
+  clickable: true
+}), _defineProperty(_ref4, "navigation", {
+  prevEl: '.swiper-button-prev',
+  nextEl: '.swiper-button-next'
+}), _ref4));

@@ -59,3 +59,23 @@ new Swiper('.swiper', {
       nextEl: '.swiper-button-next'
     }
   })
+
+  //sns 슬라이더
+  new Swiper('.swiper.sns', {
+    autoplay: {
+      delay: 5000
+    },
+    slidesPerView: "auto",
+    loop: true,
+    slidesPerView: 6,
+    spaceBetween: 0,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      prevEl: '.swiper-button-prev',
+      nextEl: '.swiper-button-next'
+    }
+  })
