@@ -23,7 +23,7 @@
 ### 사이트 주소
 
 - 원본 링크: https://www.paris.co.kr/
-- 클론 코딩 배포 링크 : https://main--singular-faloodeh-46cf76.netlify.app/
+- 클론 코딩 배포 링크 : https://subinsad.github.io/ParisBaguette-subin/
 
 ### 작업 기간
 2023년 11월 20일 ~ 2023년 11월 24일
