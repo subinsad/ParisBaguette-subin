@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Danjo-bold-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Danjo-bold-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -5,6 +11,20 @@ body {
 a {
   text-decoration: none;
   color: #000;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Danjo-bold-Regular";
+}
+
+.title-btn {
+  display: inline-block;
+  border: none;
+  background-color: white;
+  border-bottom: 2px solid #111;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .hoverBox {
@@ -19,15 +39,6 @@ a {
   height: 100%;
   transition: height 0.3s ease-out;
   opacity: 0;
-}
-
-.title-btn {
-  display: inline-block;
-  border: none;
-  background-color: white;
-  border-bottom: 2px solid #111;
-  font-weight: 700;
-  font-size: 14px;
 }
 
 header {
@@ -57,6 +68,46 @@ header nav .nav-contents__text {
   cursor: pointer;
 }
 
+.asideMenu {
+  display: flex;
+  flex-direction: column;
+  width: 74px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  background-color: #000;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 300;
+  border-radius: 5px;
+}
+.asideMenu__itmes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 15px 10px;
+  opacity: 0.8;
+}
+.asideMenu__itmes .icon {
+  width: 24px;
+}
+.asideMenu__itmes:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.asideMenu__itmes:first-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16%;
+  width: 60%;
+  height: 1px;
+  border-bottom: 1px solid #fff;
+  opacity: 1;
+}
+
 .contents-magazine {
   max-width: 1420px;
   margin: 0 auto;
@@ -67,6 +118,7 @@ header nav .nav-contents__text {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  font-family: "Danjo-bold-Regular";
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -156,6 +208,7 @@ header nav .nav-contents__text {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  font-family: "Danjo-bold-Regular";
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -190,6 +243,7 @@ header nav .nav-contents__text {
 }
 .contents-stroy__list-box__list .img-box__text-box__title {
   font-size: 24px;
+  font-family: "Danjo-bold-Regular";
   line-height: 1.25;
   overflow: hidden;
 }
@@ -217,6 +271,7 @@ header nav .nav-contents__text {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  font-family: "Danjo-bold-Regular";
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -261,6 +316,7 @@ header nav .nav-contents__text {
   opacity: 0.8;
   text-align: center;
   color: #000;
+  font-family: "Danjo-bold-Regular";
   font-size: 16px;
   text-align: left;
 }
@@ -299,6 +355,7 @@ header nav .nav-contents__text {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  font-family: "Danjo-bold-Regular";
   font-size: 24px;
   text-transform: uppercase;
 }
@@ -470,10 +527,6 @@ header nav .nav-contents__text {
 }
 .contents-notice__text-box:hover .hoverBox {
   opacity: 1;
-}
-
-h3 {
-  font-size: 24px;
 }
 
 footer {
