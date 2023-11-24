@@ -98,15 +98,41 @@ header {
     height: 90px;
 
     background-color: $color-blue-001;
-    color: $color-white-001;
+
     font-weight: 300;
 
     nav {
         .nav-contents {
             display: flex;
+            align-items: center;
 
             &__text {
+                display: flex;
                 padding: 0 12px;
+                font-size: 14px;
+                font-weight: 300;
+                color: $color-white-001;
+                line-height: 90px;
+                letter-spacing: 0.02em;
+
+                a {
+                    color: $color-white-001;
+                }
+
+                .color-y {
+                    color: $color-yellow-001;
+                }
+            }
+
+            &__text:hover {
+                border-bottom: 2px solid $color-white-001;
+                z-index: 2;
+                animation-name: headerBar;
+                animation-duration: 2s;
+                animation-duration: leaner;
+                animation-iteration-count: 3;
+                animation-direction: alternate;
+                animation-fill-mode: forwards;
             }
         }
     }
@@ -564,10 +590,10 @@ header {
         &__text {
             width: 80%;
 
-            font-size: 18px;
+            font-size: 12px;
             font-weight: 300;
             color: $color-white-001;
-            line-height: 26px;
+            line-height: 16px;
             text-align: center;
         }
     }

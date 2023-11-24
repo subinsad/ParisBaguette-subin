@@ -47,14 +47,36 @@ header {
   align-items: center;
   height: 90px;
   background-color: #062f78;
-  color: #fff;
   font-weight: 300;
 }
 header nav .nav-contents {
   display: flex;
+  align-items: center;
 }
 header nav .nav-contents__text {
+  display: flex;
   padding: 0 12px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 90px;
+  letter-spacing: 0.02em;
+}
+header nav .nav-contents__text a {
+  color: #fff;
+}
+header nav .nav-contents__text .color-y {
+  color: #feda24;
+}
+header nav .nav-contents__text:hover {
+  border-bottom: 2px solid #fff;
+  z-index: 2;
+  animation-name: headerBar;
+  animation-duration: 2s;
+  animation-duration: leaner;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 .mainbanner {
@@ -448,10 +470,10 @@ header nav .nav-contents__text {
 }
 .contents-sns .hoverBox__text {
   width: 80%;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 300;
   color: #fff;
-  line-height: 26px;
+  line-height: 16px;
   text-align: center;
 }
 .contents-sns .swiper-slide:hover .hoverBox {
